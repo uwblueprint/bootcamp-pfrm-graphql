@@ -8,7 +8,7 @@ graphql-relay==3.2.0
 graphql-server==3.0.0b5
 itsdangerous==1.1.0
 Jinja2==2.11.3
-Mako==1.1.4
+Mako==1.2.2
 MarkupSafe==1.1.1
 mongoengine==0.27.0
 psycopg2==2.8.6
