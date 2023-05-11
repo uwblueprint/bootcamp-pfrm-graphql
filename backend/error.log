@@ -1,0 +1,94 @@
+2023-05-10 01:55:19,416-ERROR-app.graphql.error_handling::error_handling,23: resolve_getAllRestaurants() missing 1 required positional argument: 'number'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+TypeError: resolve_getAllRestaurants() missing 1 required positional argument: 'number'
+2023-05-10 01:56:08,057-ERROR-app::restaurant_service,32: Failed to get users. Reason = __init__() takes 1 positional argument but 2 were given
+2023-05-10 01:56:08,059-ERROR-app.graphql.error_handling::error_handling,23: __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 38, in resolve_getAllRestaurants
+    restaurant_dtos = services[
+  File "/app/app/services/restaurant_service.py", line 37, in get_restaurants
+    raise e
+  File "/app/app/services/restaurant_service.py", line 29, in get_restaurants
+    restaurant_dtos.append(RestaurantDTO(restaurant_dict))
+TypeError: __init__() takes 1 positional argument but 2 were given
+2023-05-10 02:00:09,381-ERROR-app.graphql.error_handling::error_handling,23: 'RestaurantDTO' object has no attribute 'id'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 42, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 44, in <listcomp>
+    id = restaurant_dto.id,
+AttributeError: 'RestaurantDTO' object has no attribute 'id'
+2023-05-10 02:01:06,911-ERROR-app.graphql.error_handling::error_handling,23: 'RestaurantDTO' object has no attribute 'id'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 44, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 46, in <listcomp>
+    id = restaurant_dto.id,
+AttributeError: 'RestaurantDTO' object has no attribute 'id'
+2023-05-10 02:01:44,317-ERROR-app.graphql.error_handling::error_handling,23: 'RestaurantDTO' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 44, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 47, in <listcomp>
+    name = restaurant_dto.name,
+AttributeError: 'RestaurantDTO' object has no attribute 'name'
+2023-05-10 02:03:32,649-ERROR-app.graphql.error_handling::error_handling,23: 'dict' object has no attribute 'id'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 44, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 46, in <listcomp>
+    id = restaurant_dto.id,
+AttributeError: 'dict' object has no attribute 'id'
+2023-05-10 02:05:12,068-ERROR-app.graphql.error_handling::error_handling,23: unsupported operand type(s) for +: 'dict' and 'str'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 38, in resolve_getAllRestaurants
+    restaurant_dtos = services[
+  File "/app/app/services/restaurant_service.py", line 28, in get_restaurants
+    print(restaurant_dict + "\n")
+TypeError: unsupported operand type(s) for +: 'dict' and 'str'
+2023-05-10 02:07:58,584-ERROR-app.graphql.error_handling::error_handling,23: 'dict' object has no attribute 'id'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 44, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 46, in <listcomp>
+    id = restaurant_dto.id,
+AttributeError: 'dict' object has no attribute 'id'
+2023-05-10 02:09:02,794-ERROR-app.graphql.error_handling::error_handling,23: 'dict' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 44, in resolve_getAllRestaurants
+    return [
+  File "/app/app/graphql/restaurant.py", line 47, in <listcomp>
+    name = restaurant_dto.name,
+AttributeError: 'dict' object has no attribute 'name'
+2023-05-11 01:50:12,472-ERROR-app.graphql.error_handling::error_handling,23: 'RestaurantService' object has no attribute 'create_onboarding_request'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 79, in mutate
+    restaurant_dto = services[
+AttributeError: 'RestaurantService' object has no attribute 'create_onboarding_request'
+2023-05-11 01:53:52,001-ERROR-app.graphql.error_handling::error_handling,23: __init__() got an unexpected keyword argument 'updated_restaurant'
+Traceback (most recent call last):
+  File "/app/app/graphql/error_handling.py", line 19, in do_resolve
+    return resolve(*args, **kwargs)
+  File "/app/app/graphql/restaurant.py", line 118, in mutate
+    return UpdateRestaurant(updated_restaurant=updated_restaurant)
+TypeError: __init__() got an unexpected keyword argument 'updated_restaurant'
