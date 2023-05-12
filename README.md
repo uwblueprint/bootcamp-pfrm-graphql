@@ -50,7 +50,7 @@ $ cd bootcamp-pfrm-graphql
 
   c. Rename `/backend/.env.sample` to `/backend/.env`
 
-  d. In `backend/app/models/__init__.js`, set `erase_db_and_sync` to `true` on line 10. This will populate your database with some fake data we created upon start up
+  d. In `backend/app/models/__init__.py`, set `erase_db_and_sync` to `true` on line 10. This will populate your database with some fake data we created upon start up
 
 5. Fill in frontend environment variables in `/frontend/.env.sample`, then rename the file to `/frontend/.env`
 ```
