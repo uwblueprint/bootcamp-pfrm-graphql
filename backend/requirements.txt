@@ -6,10 +6,10 @@ graphene==3.1.1
 graphql-core==3.2.3
 graphql-relay==3.2.0
 graphql-server==3.0.0b5
-itsdangerous==1.1.0
-Jinja2==2.11.3
+itsdangerous==2.0.0
+Jinja2==3.0.0
 Mako==1.2.2
-MarkupSafe==1.1.1
+MarkupSafe==2.1.1
 mongoengine==0.27.0
 psycopg2==2.8.6
 python-dateutil==2.8.1
